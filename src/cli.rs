@@ -21,11 +21,6 @@ pub enum Command {
         /// An optional stylesheet for the overlay, which replaces the internal style.
         #[arg(short, short, long, default_value=None)]
         style: Option<PathBuf>,
-
-        /// Specifies the hotkey to activate voice input. You can use any
-        /// key or button name from [evdev::Key](https://docs.rs/evdev/latest/evdev/struct.Key.html)
-        #[arg(long, default_value="KEY_RIGHTCTRL")]
-        hotkey: String,
     },
 }
 
